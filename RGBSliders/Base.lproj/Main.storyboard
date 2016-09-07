@@ -46,7 +46,7 @@
                                 <rect key="frame" x="164" y="502" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="DH5-XW-lb5" kind="show" id="fXB-ae-o9H"/>
+                                    <segue destination="DH5-XW-lb5" kind="show" identifier="openColor" id="fXB-ae-o9H"/>
                                 </connections>
                             </button>
                         </subviews>

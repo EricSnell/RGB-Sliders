@@ -30,6 +30,15 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "openColor") {
+            // storing a reference to the second view controller in a variable
+            let newViewController = segue.destinationViewController
+            // the first view controller tells the second view controller to give its view the same background color as the color picker square
+            newViewController.view.backgroundColor = colorSquare.backgroundColor
+        }
+    }
 
     @IBAction func updateBackgroundColor() {
         let red = CGFloat(redSlider.value)
